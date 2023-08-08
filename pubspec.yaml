@@ -17,3 +17,6 @@ dev_dependencies:
 
 flutter:
   uses-material-design: true
+  assets:
+   - lib/asset/image/ic_facebook.png
+    - lib/asset/image/ic_google.png

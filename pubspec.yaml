@@ -16,7 +16,8 @@ dev_dependencies:
   flutter_lints: ^2.0.0
 
 flutter:
-  uses-material-design: true
   assets:
-   - lib/asset/image/ic_facebook.png
-    - lib/asset/image/ic_google.png
+       - lib/asset/image/ic_facebook.png
+       - lib/asset/image/ic_google.png
+  uses-material-design: true
+ 

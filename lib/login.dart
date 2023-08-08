@@ -12,7 +12,8 @@ class LoginPage extends StatelessWidget {
         Text(
           "Hello, Welcome back!",
           style: TextStyle(
-            color: Colors.black.withOpacity(0.5),
+            color: Color.fromRGBO(0, 51, 102, 100),
+            fontWeight: FontWeight.bold,
             fontSize: 18,
             fontFamily: "Roboto",
           ),
@@ -20,40 +21,64 @@ class LoginPage extends StatelessWidget {
         SizedBox(
           height: 15,
         ),
-        Text("Login to continue"),
+        Padding(
+          padding: const EdgeInsets.all(10.0),
+          child: Text(
+            "Login to continue",
+            style: TextStyle(
+              color: Color.fromRGBO(0, 51, 102, 100),
+              fontWeight: FontWeight.bold,
+              fontSize: 18,
+              fontFamily: "Roboto",
+            ),
+          ),
+        ),
         SizedBox(
           width: maxWidth,
           child: TextField(
             autofocus: true,
             decoration: InputDecoration(
               hintText: "username",
-              border: OutlineInputBorder(
-                borderRadius: BorderRadius.circular(15),
-              ),
+              border: InputBorder.none,
+              filled: true,
             ),
           ),
+        ),
+        SizedBox(
+          height: 16,
         ),
         SizedBox(
           width: maxWidth,
           child: TextField(
             autofocus: true,
             decoration: InputDecoration(
-              border: OutlineInputBorder(
-                borderRadius: BorderRadius.circular(15),
-              ),
+              filled: true,
+              border: InputBorder.none,
               hintText: "password",
             ),
           ),
+        ),
+        SizedBox(
+          height: 16,
         ),
         TextButton(
           onPressed: () {},
           child: const Text("Forgot password?"),
         ),
+        SizedBox(
+          height: 16,
+        ),
         ElevatedButton(
           onPressed: () {},
           child: const Text("Login"),
         ),
-        const Text("or login with"),
+        SizedBox(
+          height: 16,
+        ),
+        Padding(
+          padding: const EdgeInsets.all(10),
+          child: const Text("Or login with"),
+        ),
         ElevatedButton(
           onPressed: () {},
           child: Row(
@@ -67,6 +92,9 @@ class LoginPage extends StatelessWidget {
             ],
           ),
         ),
+        SizedBox(
+          height: 16,
+        ),
         ElevatedButton(
           onPressed: () {},
           child: Row(
@@ -79,6 +107,9 @@ class LoginPage extends StatelessWidget {
               const Text("login with facebook"),
             ],
           ),
+        ),
+        SizedBox(
+          height: 16,
         ),
         Row(
           children: [

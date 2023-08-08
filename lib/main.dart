@@ -11,10 +11,6 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       home: Scaffold(
         backgroundColor: Colors.white.withOpacity(0.8),
-        drawer: Container(
-          width: 300,
-          color: Colors.white70,
-        ),
         body: LoginPage(),
       ),
     );
